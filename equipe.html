@@ -1,0 +1,225 @@
+ <!DOCTYPE html>
+<html lang="fr" translate="no">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Notre Équipe – Héritage de Mémé</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="equipe.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="navbar scrolled" id="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__brand">
+        <img src="Heritage_de_Meme_Logo_Premium.png" alt="Héritage de Mémé" class="navbar__logo"/>
+        <span class="navbar__name">Héritage de Mémé</span>
+        <img src="cupcake.png" alt="" class="navbar__cupcake" style="width:22px; height:22px; margin-left: 4px: filter:brightness(0) invert(1) ; flex-shrink:0"/>
+      </a>
+      <ul class="navbar__links">
+        <li><a href="index.html#about">Notre histoire</a></li>
+        <li><a href="index.html#menu">Nos créations</a></li>
+        <li><a href="index.html#values">Valeurs</a></li>
+        <li><a href="equipe.html" class="navbar__link--equipe active">Découvrez les artisans<br/>de nos créations</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+      <button class="navbar__burger" id="burgerBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="equipe-hero">
+    <div class="equipe-hero__content">
+      <p class="section-eyebrow center">Héritage de Mémé</p>
+      <h1 class="equipe-hero__title">Les artisans<br/>de nos créations</h1>
+      <p class="equipe-hero__sub">Derrière chaque création, des mains passionnées et des cœurs dévoués.</p>
+    </div>
+  </section>
+
+  <!-- GRILLE -->
+  <section class="equipe-grid-section">
+    <div class="container">
+      <div class="equipe-grid">
+
+        <!-- CARTE ORNELLA -->
+        <article class="membre-card" data-membre="ornella">
+          <div class="membre-card__img-wrap">
+            <img src="Ornella_Portrait_Heritage_de_Meme_HD.jpg" alt="Ornella" class="membre-card__img"/>
+            <div class="membre-card__overlay">
+              <button class="btn btn--primary open-panel" data-membre="ornella">Découvrir</button>
+            </div>
+          </div>
+          <div class="membre-card__body">
+            <p class="membre-card__eyebrow">Notre équipe</p>
+            <h2 class="membre-card__name">Ornella</h2>
+            <p class="membre-card__title-italic">Égérie de la Maison</p>
+            <p class="membre-card__role">Responsable Administrative & Expérience Client</p>
+            <button class="membre-card__link open-panel" data-membre="ornella">Voir le profil →</button>
+          </div>
+        </article>
+
+        <!-- CARTE À VENIR -->
+        <article class="membre-card membre-card--soon">
+          <div class="membre-card__img-wrap membre-card__img-wrap--soon">
+            <span class="membre-card__soon-icon">✦</span>
+          </div>
+          <div class="membre-card__body">
+            <p class="membre-card__eyebrow">Bientôt</p>
+            <h2 class="membre-card__name membre-card__name--muted">À venir</h2>
+            <p class="membre-card__role membre-card__role--muted">Un nouveau talent rejoindra bientôt la Maison.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       PANNEAU LATÉRAL — ORNELLA
+  ═══════════════════════════════════════ -->
+  <div class="side-panel" id="panel-ornella">
+    <div class="side-panel__inner">
+
+      <!-- Bouton fermer -->
+      <button class="side-panel__close" data-close="ornella">✕</button>
+
+      <!-- GAUCHE : Photo -->
+      <div class="side-panel__left">
+        <div class="side-panel__logo-block">
+          <img src="Heritage_de_Meme_Logo_Premium.png" alt="logo" class="side-panel__logo-img"/>
+          <div class="side-panel__logo-text">
+            <span>HÉRITAGE DE MÉMÉ</span>
+            <span class="side-panel__logo-sub">FOOD & NUTRITION · LUXURY TASTE</span>
+          </div>
+        </div>
+        <img src="Ornella_Portrait_Heritage_de_Meme_HD.jpg" alt="Ornella" class="side-panel__photo"/>
+        <div class="side-panel__photo-overlay">
+          <h2 class="side-panel__photo-name">ORNELLA</h2>
+          <p class="side-panel__photo-egerie">Égérie de la Maison</p>
+          <p class="side-panel__photo-role">Responsable Administrative<br/>& Expérience Client</p>
+          <blockquote class="side-panel__photo-quote">
+            « Représenter Héritage de Mémé est pour moi un honneur et une fierté. Je porte chaque jour les valeurs de la Maison avec passion et dévouement. »
+          </blockquote>
+        </div>
+      </div>
+
+      <!-- DROITE : Infos -->
+      <div class="side-panel__right">
+        <div class="side-panel__floral">✿</div>
+        <p class="side-panel__eyebrow">NOTRE ÉQUIPE</p>
+        <div class="side-panel__divider-top"></div>
+        <h1 class="side-panel__name">ORNELLA</h1>
+        <p class="side-panel__egerie">Égérie de la Maison</p>
+        <p class="side-panel__role">Responsable Administrative<br/>& Expérience Client</p>
+        <div class="side-panel__ornament">❧</div>
+        <p class="side-panel__bio">Ornella incarne l'élégance, la bienveillance et l'excellence de la Maison Héritage de Mémé. En tant que Responsable Administrative & Expérience Client et égérie de la Maison, elle est le visage et le cœur de chaque interaction.</p>
+        <p class="side-panel__bio">Elle veille à ce que chaque client vive une expérience unique, à la hauteur de nos valeurs : authenticité, raffinement et générosité.</p>
+
+        <!-- Compétences -->
+        <div class="side-panel__competences">
+          <div class="side-panel__competence">
+            <div class="side-panel__competence-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#c49b49" stroke-width="1.5" width="26" height="26"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+            </div>
+            <h4>L'ACCUEIL</h4>
+            <p>Elle accueille chaque client avec chaleur, écoute et professionnalisme.</p>
+          </div>
+          <div class="side-panel__competence">
+            <div class="side-panel__competence-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#c49b49" stroke-width="1.5" width="26" height="26"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="9" y1="7" x2="15" y2="7"/><line x1="9" y1="11" x2="15" y2="11"/><line x1="9" y1="15" x2="12" y2="15"/></svg>
+            </div>
+            <h4>L'ORGANISATION</h4>
+            <p>Elle assure le suivi et la gestion administrative avec rigueur et discrétion.</p>
+          </div>
+          <div class="side-panel__competence">
+            <div class="side-panel__competence-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#c49b49" stroke-width="1.5" width="26" height="26"><path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+            </div>
+            <h4>L'EXPÉRIENCE</h4>
+            <p>Elle crée des moments inoubliables et veille à chaque détail de l'expérience client.</p>
+          </div>
+          <div class="side-panel__competence">
+            <div class="side-panel__competence-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#c49b49" stroke-width="1.5" width="26" height="26"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <h4>L'AMBASSADRICE</h4>
+            <p>Elle représente la Maison avec fierté et incarne nos valeurs au quotidien.</p>
+          </div>
+        </div>
+
+        <!-- Citation finale -->
+        <blockquote class="side-panel__final-quote">
+          <span class="side-panel__qmark">❝</span>
+          Je m'engage chaque jour à faire rayonner Héritage de Mémé à travers chaque sourire, chaque geste et chaque attention.
+          <span class="side-panel__qmark">❞</span>
+        </blockquote>
+
+        <div class="side-panel__footer-ornament">
+          <img src="Heritage_de_Meme_Logo_Premium.png" alt="" class="side-panel__mini-logo"/>
+          <p class="side-panel__footer-text">L'EXCELLENCE DANS CHAQUE DÉTAIL</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- OVERLAY -->
+  <div class="panel-overlay" id="panelOverlay"></div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__logo-col">
+          <img src="Heritage_de_Meme_Logo_Premium.png" alt="Héritage de Mémé" class="footer__logo"/>
+          <span class="footer__tagline">Food & Nutrition · Luxury Taste</span>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__col-title">Nous contacter</h4>
+          <ul class="footer__list">
+            <li>
+              <svg width="15" height="15" fill="none" stroke="#c49b49" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5.5A1.5 1.5 0 0 1 4.5 4h1.379a1.5 1.5 0 0 1 1.394.944l.818 2.045a1.5 1.5 0 0 1-.343 1.641l-.9.9a11.042 11.042 0 0 0 5.622 5.622l.9-.9a1.5 1.5 0 0 1 1.641-.343l2.045.818A1.5 1.5 0 0 1 20 16.12V17.5A1.5 1.5 0 0 1 18.5 19C10.492 19 5 13.508 5 5.5Z"/></svg>
+              676 29 25 93
+            </li>
+            <li>
+              <svg width="15" height="15" fill="none" stroke="#c49b49" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5.5A1.5 1.5 0 0 1 4.5 4h1.379a1.5 1.5 0 0 1 1.394.944l.818 2.045a1.5 1.5 0 0 1-.343 1.641l-.9.9a11.042 11.042 0 0 0 5.622 5.622l.9-.9a1.5 1.5 0 0 1 1.641-.343l2.045.818A1.5 1.5 0 0 1 20 16.12V17.5A1.5 1.5 0 0 1 18.5 19C10.492 19 5 13.508 5 5.5Z"/></svg>
+              687 64 29 36
+            </li>
+            <li>
+              <svg width="15" height="15" fill="none" stroke="#c49b49" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0-9.75 6.75L2.25 6.75"/></svg>
+              <a href="mailto:Heritagedememe@gmail.com">Heritagedememe@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col footer__social-col">
+          <h4 class="footer__col-title">Suivez-nous</h4>
+          <div class="footer__socials">
+            <a href="https://www.instagram.com/heritage_de_meme?igsh=MWkwZHNhcWUxOTZhMQ%3D%3D&utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram" class="footer__social-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#c49b49" stroke-width="1.6" width="20" height="20"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="#c49b49" stroke="none"/></svg>
+            </a>
+            <a href="https://www.tiktok.com/@heritage.de.meme?_r=1&_t=ZT-97amTNqGWh4" target="_blank" rel="noopener" aria-label="TikTok" class="footer__social-btn">
+              <svg viewBox="0 0 24 24" fill="#c49b49" width="20" height="20"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.32 6.32 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.18 8.18 0 0 0 4.78 1.52V6.76a4.85 4.85 0 0 1-1.01-.07Z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__divider"><span class="footer__divider-ornament">✦</span></div>
+      <div class="footer__bottom">
+        <ul class="footer__legal">
+          <li><a href="#">Mentions légales</a></li>
+          <li><a href="#">Politique de confidentialité</a></li>
+          <li><a href="#">CGV</a></li>
+        </ul>
+        <p class="footer__copy">&copy; 2025 Héritage de Mémé. Tous droits réservés.</p>
+        <p class="footer__location">Cameroun</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="equipe.js"></script>
+</body>
+</html>
