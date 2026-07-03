@@ -50,9 +50,9 @@ let selectedRating = 0;
 stars.forEach(star => {
  star.setAttribute('tabindex' , '0');
  star.setAttribute('role' , 'button');
- star.setAttribute('aria-label' , `Noter ${star.dataset.value étoiles`);
+ star.setAttribute('aria-label' , `Noter ${star.dataset.value} étoiles`);
 
- star.addEventListenner('keydown' , (e) => {
+ star.addEventListener('keydown' , (e) => {
   if (e.key === 'Enter' || e.key === ' '){
    e.preventDefault();
    star.click();
