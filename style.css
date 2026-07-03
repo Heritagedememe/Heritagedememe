@@ -128,7 +128,7 @@ img { display: block; max-width: 100%; }
 .footer__copy { font-size: 11px; color: rgba(74,59,40,0.8); letter-spacing: 0.05em; }
 .footer_location{
     font-size: 11px;
-    color: rgba(122,99,64,0,8);
+    color: rgba(122,99,64,0.8);
     letter-spacing: 0.08em;
 }
 /* RESPONSIVE */
