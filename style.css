@@ -45,12 +45,12 @@ img { display: block; max-width: 100%; }
 .navbar__brand { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
 .navbar__logo { width: 36px; height: 36px; object-fit: contain; }
 .navbar__name { font-family: 'Times New Roman', Times, serif; font-size: 13px; color: var(--gold-light); font-weight: normal; letter-spacing: 0.06em; white-space: nowrap; }
-.navbar__links { display: flex; align-items: center; gap: 28px; margin-left: auto; flex-shrink:0; }
+.navbar__links { display: none; align-items: center; gap: 28px; margin-left: auto; flex-shrink:0; transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s ease; transform: translateY(-10px); opacity: 0;}
 .navbar__links li a { font-size: 11px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(232,217,181,0.75); transition: color var(--transition); position: relative; padding-bottom: 3px; }
 .navbar__links li a::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 1px; background: var(--gold); transition: width var(--transition); }
 .navbar__links li a:hover { color: var(--gold-light); }
 .navbar__links li a:hover::after { width: 100%; }
-.navbar__burger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; margin-left: auto; }
+.navbar__burger { display: flex; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; margin-left: auto; }
 .navbar__burger span { display: block; width: 22px; height: 2px; background: var(--gold-light); border-radius: 2px; transition: all var(--transition); }
 
 /* HERO */
@@ -136,14 +136,6 @@ img { display: block; max-width: 100%; }
   .about__grid, .menu__grid, .values__grid, .footer__top { grid-template-columns: 1fr; }
   .footer__social-col { align-items: flex-start; }
 }
-@media (max-width: 640px) {
-  .navbar__links {
-    display: none;
-  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.4s ease;
-  transform: translateY(-10px);
-  opacity: 0;
-}
-
 .navbar__links.open {
   display: flex;
   flex-direction: column;
@@ -159,7 +151,7 @@ img { display: block; max-width: 100%; }
   opacity: 1;
   pointer-events: all;
 }
-  .navbar__burger { display: flex; }
+@media (max-width: 640px){
   .footer__bottom { flex-direction: column; align-items: center; text-align: center; }
   .footer__legal { flex-wrap: wrap; justify-content: center; }
 
