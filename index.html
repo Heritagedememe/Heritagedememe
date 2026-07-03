@@ -8,7 +8,7 @@
 <meta name="description" content="Héritage de Mémé — pâtisserie artisanale de luxe : cupcakes signature, gâteaux sur mesure et coffrets premium au Cameroun.">
 <meta property="og:title" content="Héritage de Mémé – Food & Nutrition · Luxury Taste">
 <meta property="og:description" content="Des saveurs d'exception, façonnées avec amour.">
-<meta property="og:image" content="https://heritagedemem.netlify.app/Heritage_de_Meme_Logo_Premium.png">
+<meta property="og:image" content="https://heritagedememe.netlify.app/Heritage_de_Meme_Logo_Premium.png">
  <meta property="og:url" content="https://heritagedememe.netlify.app/">
 <meta property="og:type" content="website">
 <link rel="icon" type="image/png" href="favicon.png">
@@ -17,7 +17,6 @@
 <!-- preconnect vers google fonts-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond..." rel="stylesheet"/>
 
 </head>
 <body>
@@ -35,11 +34,13 @@
         <li><a href="#contact">Contact</a></li>
         <li style="text-align:center;"><a href="equipe.html" class="navbar__link--equipe">Découvrez les artisans<br/>de nos créations</a></li>
       </ul>
-      <button class="navbar__burger" id="burgerBtn" aria-label="Menu">
+      <button class="navbar__burger" id="burgerBtn" aria-label="Menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
+ <div class="navbar__overlay" id="navOverlay">
+ </div>
 
   <section class="hero">
     <div class="hero__overlay"></div>
