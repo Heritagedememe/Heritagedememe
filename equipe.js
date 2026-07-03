@@ -5,6 +5,8 @@ function openPanel(id) {
   const panel = document.getElementById('panel-' + id);
   if (!panel) return;
   panel.classList.add('open');
+ panel.setAttribute('role' , 'dialog');
+ panel.setAttribute('aria-modal' , 'true');
   overlay.classList.add('active');
   document.body.style.overflow = 'hidden';
 }
