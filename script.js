@@ -48,6 +48,16 @@ const captions = ['', 'Décevant…', 'Peut mieux faire', 'Bien !', 'Très bien 
 let selectedRating = 0;
 
 stars.forEach(star => {
+ star.setAttribute('tabindex' , '0');
+ star.setAttribute('role' , 'button');
+ star.setAttribute('aria-label' , `Noter ${star.dataset.value étoiles`);
+
+ star.addEventListenner('keydown' , (e) => {
+  if (e.key === 'Enter' || e.key === ' '){
+   e.preventDefault();
+   star.click();
+  }
+ });
   star.addEventListener('mouseover', () => {
     const val = +star.dataset.value;
     stars.forEach(s => s.classList.toggle('hovered', +s.dataset.value <= val));
@@ -65,16 +75,18 @@ stars.forEach(star => {
   });
 });
 
-submitReview.addEventListener('click', () => {
-  if (!selectedRating) {
-    thankMsg.textContent = 'Veuillez choisir une note ✦';
-    thankMsg.style.color = '#c0392b';
-    return;
-  }
-  thankMsg.textContent = 'Merci pour votre avis, cela nous touche ! ✦';
-  thankMsg.style.color = '';
-  document.getElementById('reviewText').value = '';
-  selectedRating = 0;
-  stars.forEach(s => s.classList.remove('selected'));
-  starCaption.textContent = 'Cliquez pour noter';
-});
+if (submitReview) {
+  submitReview.addEventListener('click', () => {
+    if (!selectedRating) {
+      thankMsg.textContent = 'Veuillez choisir une note ✦';
+      thankMsg.style.color = '#c0392b';
+      return;
+    }
+    thankMsg.textContent = 'Merci pour votre avis, cela nous touche ! ✦';
+    thankMsg.style.color = '';
+    document.getElementById('reviewText').value = '';
+    selectedRating = 0;
+    stars.forEach(s => s.classList.remove('selected'));
+    starCaption.textContent = 'Cliquez pour noter';
+  });
+}
