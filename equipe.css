@@ -1,12 +1,4 @@
  /* ── NAVBAR ── */
-.navbar__link--equipe {
-  font-size: 9px !important;
-  line-height: 1.5;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 .navbar__link--equipe.active {
   color: var(--gold) !important;
 }
