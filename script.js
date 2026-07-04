@@ -4,17 +4,33 @@ window.addEventListener('scroll', () => {
   navbar.classList.toggle('scrolled', window.scrollY > 40);
 });
 
-const burgerBtn = document.getElementById('burgerBtn');
-const navLinks  = document.querySelector('.navbar__links');
+const burgerBtn  = document.getElementById('burgerBtn');
+const navLinks   = document.querySelector('.navbar__links');
+const navOverlay = document.getElementById('navOverlay');
+
+function closeMenu() {
+  navLinks.classList.remove('open');
+  burgerBtn.classList.remove('open');
+  burgerBtn.setAttribute('aria-expanded', 'false');
+  navOverlay.classList.remove('active');
+}
+
+function openMenu() {
+  navLinks.classList.add('open');
+  burgerBtn.classList.add('open');
+  burgerBtn.setAttribute('aria-expanded', 'true');
+  navOverlay.classList.add('active');
+}
 
 burgerBtn.addEventListener('click', () => {
-  navLinks.classList.toggle('open');
+  navLinks.classList.contains('open') ? closeMenu() : openMenu();
 });
+
+navOverlay.addEventListener('click', closeMenu);
 
 navLinks.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => navLinks.classList.remove('open'));
+  link.addEventListener('click', closeMenu);
 });
-
 const revealEls = document.querySelectorAll(
   '.about__grid, .menu-card, .value-item, .contact-banner__actions'
 );
